@@ -1,0 +1,26 @@
+* {
+   
+}
+
+
+
+/*
+.nav-bar {
+    display: flex;
+    justify-content: flex-end;
+}
+*/
+
+header {
+    
+}
+
+.photo-of-me {
+    border-radius: 20%;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
