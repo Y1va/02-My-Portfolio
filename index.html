@@ -2,63 +2,66 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <title>My Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced Portfolio</title>
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-    <header>
-        <h1 class="page-title">My Portfolio | Adrian Ponze</h1>
-        <nav class="nav-bar">
-            <ul>
-                <li><a href="#AboutMe">About Me</a></li>
-                <li><a href="#MyWork">My Work</a></li>
-                <li><a href="#ContactMe">Contact Me</a></li>
-                <li><a href="#Resume">Resume</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <div>
-        <img src="./assets/images/banner.jpg" alt="blue banner" class="banner">
+  <header>
+    <div class="container">
+      <h1 class="title-page">Adrian Ponze | Portfolio</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </div>
+  </header>
 
-    <main>
-        <section class="about-me" id="AboutMe">    
-                <h2 class="about-me-header">About Me</h2>
-                <p>Currently working as a full time Service Desk Agent for a company called Datacom. My aim is to become a full stack web developer, I hope I can be successful
-                and get a job at the end of this course.</p>
-        </section>
-        <section id="MyWork">
-                <h2>My Work</h2>
-            <div class="weather-card">
-                <h3>Weather Widget</h3>
-                <img src="./assets/images/weathericon.png" alt="Weather icon">
-                <p>Created an app using HTML, CSS and JavaScript that tells you the weather</p>
-            </div>
-        </section>
-        <section>
-            <h3>Snake Game</h3>
-            <div class="snake-card">
+  <main>
+    <section id="about">
+      <div class="container">
+        <h2>About Me</h2>
+        <p>Welcome to my portfolio! I'm passionate about...</p>
+        <!-- Add more about yourself here -->
+      </div>
+    </section>
 
-            </div>
-        </section>
+    <section id="projects">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="weather-card">
+          <h3>Project 1</h3>
+          <p>Created an app using HTML, CSS and JavaScript that tells you the weather.</p>
+          <img src="./images/weathericon.png"  class="weather-image" alt="weather icon">
+        </div>
+          <!-- Add more projects similarly -->
+          <div class="snake-game">
+            <p>Project 2</p>
+            <img src="./images/snakegame.png" alt="snake game">
+          </div>
+        
+      </div>
+    </section>
 
+    <section id="contact">
+      <div class="container">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out to me at...</p>
+        <!-- Add contact information and form here -->
+      </div>
+    </section>
+  </main>
 
-
-
-
-        <footer>
-            <h2 class="contact-me">Contact Me</h2>
-            <ul>
-                <li><a href="ponzeadrian@gmail.com"></a>Email</li>
-                <li><a href="index.html"></a>Website</li>
-                <li><a href="https://github.com/Y1va"></a>Github</li>  
-            </ul>
-        </footer>
-    </main>
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 Adrian Ponze</p>
+    </div>
+  </footer>
 </body>
 
 </html>

@@ -1,89 +1,139 @@
-:root {
-    --darktheme: #393939;
-    --border-radius: 10px;
+/* Resetting default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+/* Basic styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
 
-* {
-   font-family: Arial, Helvetica, sans-serif;
-   background-color: var(--darktheme);
-   color: white;   
-   margin: 0;
-   padding: 0;
+.container {
+  max-width: 575px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
 }
 
-main {
-    padding: 20px;
+.title-page {
+  display: inline-block;
+  background-color: #613ED8;
+  padding: 7px;
+  border-radius: 10px;
+  
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2em;
 }
 
 nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
 }
 
-nav a {
-    float: inline-end;
-    list-style: none;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: underline;
-    text-underline-offset: 7px;
-    text-decoration-thickness: 2px;
-    font-size: 18px;
-    border-radius: 10px;
+nav ul li {
+  margin-right: 20px;
 }
 
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  text-decoration: underline;
+  text-underline-offset: 7px;
+  text-decoration-thickness: 3px;
+  border-radius: 7px;
+  padding: 10px;
+}
 
 nav a:hover {
-    background-color: #6F8FAF	;
+  background-color: #613ED8;
 }
 
-nav a:active {
-    background-color: darkblue;
+main {
+  padding: 40px 0;
+  background-color: ;
 }
 
+section {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.weather-card, .snake-game {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.weather-image {
+  object-fit: contain;
+}
+
+.weather-card:hover {
+  transform: scale(1.05);
+}
+
+.snake-game:hover {
+  transform: scale(1.05);
+}
+
+
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
-.banner {
-    height: 200px;
-    width: 100%;
-   
-}
-
-.page-title {
-    /* background-color:#6F8FAF; */
-    padding: 15px;
-    height: 50px;
-    margin: 0;
-    /*border-style: solid; */
-   /* border-color:antiquewhite; */ 
-    border-radius: 20px;  
-}
-
-
-.about-me {
-    display: flex;
+/* Responsive design */
+@media (max-width: 768px) {
+  header {
     text-align: center;
-    justify-content: space-between;
-    font-size: medium;
-    justify-content: center;
-    
-}
+  }
 
-.about-me-header {
-    display: flex;
-    justify-content: flex-start;
+  header h1 {
+    font-size: 1.5em;
+  }
+
+  nav ul {
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  nav ul li {
+    margin-right: 10px;
+  }
+
+  main {
+    padding: 20px 0;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
 }
