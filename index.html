@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Advanced Portfolio</title>
-  <link rel="stylesheet" href="./css/style.css">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
@@ -19,6 +19,9 @@
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
+      <div>
+        <img src="./assets/images/profilepic.jpg" alt="photo of me" class="profile-pic">
+      </div>
     </div>
   </header>
 
@@ -26,33 +29,54 @@
     <section id="about">
       <div class="container">
         <h2>About Me</h2>
-        <p>Welcome to my portfolio! I'm passionate about...</p>
-        <!-- Add more about yourself here -->
+        <p>Welcome to my portfolio! I'm passionate about learning code. 
+          My goal is to become a full-stack web Developer/Software Engineer.
+        I am currently a full time Service Desk Agent for a company called Datacom.</p>
       </div>
     </section>
 
     <section id="projects">
       <div class="container">
         <h2>Projects</h2>
+        <a href="https://www.weatherzone.com.au/" target="_blank">
         <div class="weather-card">
-          <h3>Project 1</h3>
+          <h3>Project 1 - Weather Widget</h3>
           <p>Created an app using HTML, CSS and JavaScript that tells you the weather.</p>
-          <img src="./images/weathericon.png"  class="weather-image" alt="weather icon">
+          <img src="./assets/images/weathericon.png"  class="weather-image" alt="weather icon">
+        </a>
         </div>
-          <!-- Add more projects similarly -->
-          <div class="snake-game">
-            <p>Project 2</p>
-            <img src="./images/snakegame.png" alt="snake game">
+      
+          <div class="snake-card">
+            <h3>Project 2 - Snake Game</h3>
+            <a href="https://www.google.com/fbx?fbx=snake_arcade" target="_blank">
+            <p>Created the Snake app using HTML, CSS and JavaScript that you can interact with and have fun!</p>
+            <img src="./assets/images/snakegame.png" class="snake-image" alt="snake game">
+          </a>
           </div>
         
+          <div class="horiseon-card">
+            <a href="https://y1va.github.io/01-Refactoring-Horiseon/" target="_blank">
+            <h3>Project 3 - Horiseon Website</h3>
+            <p>Refactored existing code in order to make the website more accessible and user friendly.
+              This was created with HTML and CSS.
+            </p>
+            <img src="./assets/images/horiseon.png" class="horiseon-image" alt="book">
+          </a>
+          </div>
+       
       </div>
     </section>
 
     <section id="contact">
       <div class="container">
+        <div class="contact-me">
         <h2>Contact Me</h2>
-        <p>Feel free to reach out to me at...</p>
-        <!-- Add contact information and form here -->
+        <p>Feel free to reach out to me on the following links.</p>
+        <ul>
+          <li><a href="https://github.com/Y1va" target="_blank">Github</a> </li>
+          <li><a href="https://www.linkedin.com/in/adrian-ponze-367047246/" target="_blank">LinkedIn</a> </li>
+        </ul>
+      </div>
       </div>
     </section>
   </main>

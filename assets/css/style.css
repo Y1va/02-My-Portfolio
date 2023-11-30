@@ -1,8 +1,8 @@
 /* Resetting default browser styles */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  /* margin: 0;
+  padding: 0; */
+  /* box-sizing: border-box; */
 }
 
 /* Basic styling */
@@ -11,6 +11,15 @@ body {
   line-height: 1.6;
   background-color: #f4f4f4;
   color: #333;
+}
+
+.title-page {
+  display: inline-block;
+  background-color: #613ED8;
+  padding: 7px;
+  border-radius: 10px; 
+  box-shadow: 3px 3px;
+  border: 1px solid #ccc;
 }
 
 .container {
@@ -23,14 +32,15 @@ header {
   background-color: #333;
   color: #fff;
   padding: 20px 0;
+  
 }
 
-.title-page {
+.profile-pic {
+  height: 200px;
+  border-style: solid;
+  border-radius: 100px;
+  border-color: black;
   display: inline-block;
-  background-color: #613ED8;
-  padding: 7px;
-  border-radius: 10px;
-  
 }
 
 header h1 {
@@ -45,7 +55,7 @@ nav ul {
 }
 
 nav ul li {
-  margin-right: 20px;
+  /* margin-right: 20px; */
 }
 
 nav ul li a {
@@ -56,15 +66,20 @@ nav ul li a {
   text-decoration-thickness: 3px;
   border-radius: 7px;
   padding: 10px;
+  font-size: 20px;
 }
 
 nav a:hover {
   background-color: #613ED8;
 }
 
+nav a:active {
+  background-color: grey;
+}
+
 main {
   padding: 40px 0;
-  background-color: ;
+  background-color: #a0d2eb;
 }
 
 section {
@@ -77,27 +92,37 @@ h2 {
   margin-bottom: 20px;
 }
 
-.weather-card, .snake-game {
+.weather-card, .snake-card, .horiseon-card {
   border: 1px solid #ccc;
   border-radius: 5px;
   padding: 20px;
   margin-bottom: 20px;
   transition: transform 0.3s ease-in-out;
+  border-width: 3px;
+  border-color: #613ED8;
+  box-shadow: 4px 4px; 
 }
 
-.weather-image {
+.weather-image, .snake-image, .horiseon-image {
   object-fit: contain;
+  height: 300px;
+  width: 300px;
+  border-radius: 10px;
 }
 
-.weather-card:hover {
+
+.weather-card:hover, .snake-card:hover, .horiseon-card:hover {
   transform: scale(1.05);
 }
 
-.snake-game:hover {
-  transform: scale(1.05);
+.contact-me ul {
+  list-style: none;
 }
 
-
+.horiseon-card a, .weather-card a, .snake-card a {
+  text-decoration: none;
+  color: #333;
+}
 
 footer {
   background-color: #333;
@@ -110,10 +135,11 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Responsive design */
+/* Responsive Design */
 @media (max-width: 768px) {
   header {
     text-align: center;
+    background-color: #1400c6;
   }
 
   header h1 {
@@ -135,5 +161,12 @@ html {
 
   h2 {
     font-size: 1.5em;
+  }
+}
+
+/* Response Design */
+@media (max-width: 500px) {
+  header {
+    background-color: lightcoral;
   }
 }
