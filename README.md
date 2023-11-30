@@ -9,7 +9,7 @@ In this task, I had to build a professional portfolio about myself and about my 
 ## Usage
 
 
-You can view the page through this link ....
+You can view the page through this link https://y1va.github.io/02-My-Portfolio/
 
 In order to see this website's true colours, shrink it down and watch the colours change. It is also highly responsive for mobile phones.
 
